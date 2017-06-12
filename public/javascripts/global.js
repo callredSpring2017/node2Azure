@@ -128,7 +128,8 @@ function deleteUser(event) {
     event.preventDefault();
 
     // Pop up a confirmation dialog
-    var confirmation = confirm('Are you sure you want to delete this user?');
+    var confirmation = confirm('Are you sure you want to delete the user: ' + $('a.linkshowuser').attr('rel') + '?');
+
 
     // Check and make sure the user confirmed
     if (confirmation === true) {
